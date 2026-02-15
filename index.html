@@ -248,14 +248,30 @@ section{padding:6rem 2.5rem}
 .cmp-tbl .v{color:var(--green);font-weight:600}
 .cmp-save{display:inline-flex;padding:.2rem .5rem;border-radius:4px;background:#d1fae5;color:var(--green);font-size:.68rem;font-weight:700;font-family:var(--mono)}
 
-/* SECTORS */
-.sec-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem;margin-top:3rem}
-.sec-card{background:var(--card);border-radius:12px;padding:1.5rem;border:1px solid var(--border);transition:all .3s}
-.sec-card:hover{border-color:var(--teal);transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,.06)}
-.sec-icon{font-size:1.6rem;margin-bottom:.6rem}
-.sec-name{font-size:.92rem;font-weight:700;color:var(--text);margin-bottom:.3rem}
-.sec-desc{font-size:.78rem;color:var(--text4);line-height:1.5}
-.sec-roi{display:inline-flex;align-items:center;gap:.3rem;margin-top:.5rem;padding:.2rem .5rem;border-radius:4px;background:#d1fae5;color:var(--green);font-size:.68rem;font-weight:700}
+/* USE CASES */
+.uc-tabs{display:flex;gap:.6rem;margin-top:2rem;flex-wrap:wrap}
+.uc-tab{padding:.55rem 1.2rem;border-radius:100px;border:1px solid var(--border);background:var(--bg);font-size:.78rem;font-weight:600;color:var(--text3);cursor:pointer;transition:all .2s;font-family:var(--font)}
+.uc-tab:hover{border-color:var(--teal);color:var(--teal)}
+.uc-tab.active{background:var(--teal);color:#fff;border-color:var(--teal)}
+.uc-content{margin-top:2rem}
+.uc-sector-block{display:none}
+.uc-sector-block.active{display:block}
+.uc-sector-header{display:flex;align-items:flex-start;gap:1.5rem;margin-bottom:2rem;padding-bottom:1.5rem;border-bottom:1px solid var(--border)}
+.uc-sector-icon{font-size:2.5rem}
+.uc-sector-name{font-size:1.3rem;font-weight:800;color:var(--text);margin-bottom:.3rem}
+.uc-sector-intro{font-size:.9rem;color:var(--text3);line-height:1.7;max-width:600px}
+.uc-sector-intro strong{color:var(--text);font-weight:600}
+.uc-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
+.uc-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:1.5rem;transition:all .3s}
+.uc-card:hover{border-color:var(--teal);box-shadow:0 4px 20px rgba(0,0,0,.06)}
+.uc-card-tag{display:inline-flex;padding:.2rem .5rem;border-radius:4px;font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:.8px;margin-bottom:.6rem}
+.uc-card-tag.pulse{background:var(--teal-pale);color:var(--teal)}
+.uc-card-tag.connect{background:#d1fae5;color:var(--green)}
+.uc-card-tag.f360{background:#ede9fe;color:var(--purple)}
+.uc-card h4{font-size:.9rem;font-weight:700;color:var(--text);margin-bottom:.4rem}
+.uc-card p{font-size:.8rem;color:var(--text3);line-height:1.6;margin-bottom:.6rem}
+.uc-card .uc-result{padding-top:.6rem;border-top:1px solid var(--border);font-size:.75rem;font-weight:600;color:var(--green)}
+@media(max-width:900px){.uc-cards{grid-template-columns:1fr}.uc-sector-header{flex-direction:column;gap:.8rem}}
 
 /* TESTIMONIALS */
 .test-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3rem}
@@ -682,21 +698,178 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:2.5rem 2.
   </div>
 </section>
 
-<!-- SECTORS -->
+<!-- CASOS DE USO -->
 <section id="sectores" style="background:var(--bg2);border-top:1px solid var(--border)">
   <div class="container">
-    <span class="tag">Sectores</span>
-    <h2 class="stitle">ROI real en cada sector</h2>
-    <p class="sdesc">Resultados medibles adaptados a tu industria</p>
-    <div class="sec-grid">
-      <div class="sec-card fi"><div class="sec-icon">&#127973;</div><div class="sec-name">Cl&iacute;nicas</div><div class="sec-desc">Reduce citas perdidas y mejora seguimiento de pacientes</div><div class="sec-roi">&#8593; 18% retenci&oacute;n pacientes</div></div>
-      <div class="sec-card fi s1"><div class="sec-icon">&#127968;</div><div class="sec-name">Inmobiliarias</div><div class="sec-desc">Captura leads de portales y WhatsApp sin perder ninguno</div><div class="sec-roi">&#8593; 31% conversi&oacute;n leads</div></div>
-      <div class="sec-card fi s2"><div class="sec-icon">&#128722;</div><div class="sec-name">E-commerce</div><div class="sec-desc">Postventa multicanal y detecci&oacute;n temprana de problemas</div><div class="sec-roi">&#8595; 24% devoluciones</div></div>
-      <div class="sec-card fi s3"><div class="sec-icon">&#128188;</div><div class="sec-name">Asesor&iacute;as</div><div class="sec-desc">Contexto completo de cada cliente sin fisuras entre canales</div><div class="sec-roi">&#8593; 22% satisfacci&oacute;n</div></div>
-      <div class="sec-card fi"><div class="sec-icon">&#128663;</div><div class="sec-name">Talleres</div><div class="sec-desc">Gestiona citas y reclamaciones por WhatsApp de forma profesional</div><div class="sec-roi">&#8593; 27% citas recuperadas</div></div>
-      <div class="sec-card fi s1"><div class="sec-icon">&#127891;</div><div class="sec-name">Academias</div><div class="sec-desc">Convierte consultas en matr&iacute;culas con seguimiento inteligente</div><div class="sec-roi">&#8593; 19% matr&iacute;culas</div></div>
-      <div class="sec-card fi s2"><div class="sec-icon">&#128737;</div><div class="sec-name">Seguros</div><div class="sec-desc">Monitoriza siniestros, renovaciones y detecta riesgo de fuga</div><div class="sec-roi">&#8595; 15% churn</div></div>
-      <div class="sec-card fi s3"><div class="sec-icon">&#127960;</div><div class="sec-name">Hoteler&iacute;a</div><div class="sec-desc">Mejora experiencia del hu&eacute;sped desde la reserva hasta el checkout</div><div class="sec-roi">&#8593; 0.8 pts NPS</div></div>
+    <span class="tag">Casos de uso</span>
+    <h2 class="stitle">Ejemplos concretos. Resultados medibles</h2>
+    <p class="sdesc">Situaciones reales que resolvemos en cada sector. Sin nombres, solo hechos</p>
+
+    <div class="uc-tabs">
+      <button class="uc-tab active" onclick="showSector('clinicas',this)">&#127973; Cl&iacute;nicas</button>
+      <button class="uc-tab" onclick="showSector('inmob',this)">&#127968; Inmobiliarias</button>
+      <button class="uc-tab" onclick="showSector('ecom',this)">&#128722; E-commerce</button>
+      <button class="uc-tab" onclick="showSector('asesoria',this)">&#128188; Asesor&iacute;as</button>
+      <button class="uc-tab" onclick="showSector('seguros',this)">&#128737; Seguros</button>
+    </div>
+
+    <div class="uc-content">
+
+      <!-- CLINICAS -->
+      <div class="uc-sector-block active" id="uc-clinicas">
+        <div class="uc-sector-header">
+          <div class="uc-sector-icon">&#127973;</div>
+          <div>
+            <div class="uc-sector-name">Cl&iacute;nicas y centros m&eacute;dicos</div>
+            <p class="uc-sector-intro">Una cl&iacute;nica recibe <strong>80+ llamadas diarias</strong> entre citas, consultas y urgencias. Cada llamada perdida es un paciente que no vuelve. Cada WhatsApp nocturno sin leer es un hueco en la agenda de ma&ntilde;ana</p>
+          </div>
+        </div>
+        <div class="uc-cards">
+          <div class="uc-card">
+            <div class="uc-card-tag pulse">FENIX Pulse</div>
+            <h4>Llamadas perdidas que se recuperan solas</h4>
+            <p>FENIX detecta las llamadas no atendidas, las cruza con el historial del paciente y genera alertas priorizadas. Si un paciente llam&oacute; 3 veces sin respuesta, salta aviso antes de que llame a la competencia</p>
+            <div class="uc-result">&#8594; De 12 llamadas sin devolver/d&iacute;a a 0 con alertas en tiempo real</div>
+          </div>
+          <div class="uc-card">
+            <div class="uc-card-tag connect">FENIX Connect</div>
+            <h4>Cancelaciones nocturnas detectadas antes de abrir</h4>
+            <p>Paciente manda WhatsApp a las 22h cancelando la cita de ma&ntilde;ana. La IA lo clasifica autom&aacute;ticamente como cancelaci&oacute;n y lo sube a bandeja prioritaria para reubicar el hueco antes de que abra la cl&iacute;nica</p>
+            <div class="uc-result">&#8594; Huecos de agenda cubiertos antes de las 8:00 AM</div>
+          </div>
+          <div class="uc-card">
+            <div class="uc-card-tag f360">FENIX 360</div>
+            <h4>Historial unificado por paciente</h4>
+            <p>Despu&eacute;s de una intervenci&oacute;n, el paciente llama, luego escribe por WhatsApp, luego manda email. Con FENIX 360, todo se ve en un hilo &uacute;nico con el sentimiento de cada interacci&oacute;n analizado</p>
+            <div class="uc-result">&#8594; Visi&oacute;n 360&deg; del paciente sin cambiar de aplicaci&oacute;n</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- INMOBILIARIAS -->
+      <div class="uc-sector-block" id="uc-inmob">
+        <div class="uc-sector-header">
+          <div class="uc-sector-icon">&#127968;</div>
+          <div>
+            <div class="uc-sector-name">Inmobiliarias</div>
+            <p class="uc-sector-intro">El comprador env&iacute;a consultas a <strong>3-4 inmobiliarias a la vez</strong>. La primera que responde con informaci&oacute;n relevante se lleva la visita. Las dem&aacute;s pierden la comisi&oacute;n</p>
+          </div>
+        </div>
+        <div class="uc-cards">
+          <div class="uc-card">
+            <div class="uc-card-tag connect">FENIX Connect</div>
+            <h4>Leads de portales respondidos en minutos</h4>
+            <p>Llega un contacto de portal inmobiliario por WhatsApp a las 20:30. FENIX lo clasifica como lead caliente, alerta al agente de guardia y prepara un resumen con los datos del inmueble que pide el comprador</p>
+            <div class="uc-result">&#8594; Tiempo de primera respuesta: de 14 horas a menos de 15 minutos</div>
+          </div>
+          <div class="uc-card">
+            <div class="uc-card-tag pulse">FENIX Pulse</div>
+            <h4>Seguimiento autom&aacute;tico de interesados</h4>
+            <p>Un cliente llam&oacute; hace 10 d&iacute;as. Le dijeron "te llamamos". Nadie lo hizo. Pulse transcribe la llamada, extrae que busca 3 habitaciones en zona centro y genera recordatorio autom&aacute;tico si pasan 48h sin contacto</p>
+            <div class="uc-result">&#8594; Cero leads olvidados con seguimiento sistem&aacute;tico por IA</div>
+          </div>
+          <div class="uc-card">
+            <div class="uc-card-tag f360">FENIX 360</div>
+            <h4>Coordinaci&oacute;n total entre agentes</h4>
+            <p>El cliente habl&oacute; con un agente por tel&eacute;fono y con otro por email. Con FENIX 360, ambos ven la misma ficha con historial completo de todos los canales. El cliente no repite y la agencia da imagen profesional</p>
+            <div class="uc-result">&#8594; Contexto compartido entre todo el equipo, cero informaci&oacute;n perdida</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- E-COMMERCE -->
+      <div class="uc-sector-block" id="uc-ecom">
+        <div class="uc-sector-header">
+          <div class="uc-sector-icon">&#128722;</div>
+          <div>
+            <div class="uc-sector-name">E-commerce</div>
+            <p class="uc-sector-intro">El cliente elige el canal que le conviene en cada momento. Un d&iacute;a llama, otro escribe por Instagram, otro por email. <strong>Sin contexto unificado, cada interacci&oacute;n empieza de cero</strong></p>
+          </div>
+        </div>
+        <div class="uc-cards">
+          <div class="uc-card">
+            <div class="uc-card-tag connect">FENIX Connect</div>
+            <h4>Devoluciones resueltas en el primer contacto</h4>
+            <p>Un comprador pide devoluci&oacute;n por Instagram DM. Luego llama. Luego manda email. Con FENIX, desde la primera interacci&oacute;n el agente ve qui&eacute;n es, qu&eacute; compr&oacute; y por qu&eacute; canales ya ha contactado</p>
+            <div class="uc-result">&#8594; Resoluci&oacute;n en primer contacto sin repetir datos al cliente</div>
+          </div>
+          <div class="uc-card">
+            <div class="uc-card-tag pulse">FENIX Pulse</div>
+            <h4>Clientes en riesgo detectados antes de irse</h4>
+            <p>Un cliente habitual lleva 6 semanas sin comprar. Su &uacute;ltima llamada tuvo sentimiento negativo. Pulse cruza frecuencia de compra con an&aacute;lisis de sentimiento y genera alerta de churn con motivo probable</p>
+            <div class="uc-result">&#8594; Detecci&oacute;n proactiva de churn semanas antes de perder al cliente</div>
+          </div>
+          <div class="uc-card">
+            <div class="uc-card-tag f360">FENIX 360</div>
+            <h4>Picos de campa&ntilde;a bajo control</h4>
+            <p>En Black Friday los WhatsApps se multiplican por 5. FENIX 360 clasifica por urgencia (queja, pre-compra, seguimiento env&iacute;o) y asigna al agente correcto autom&aacute;ticamente, priorizando las oportunidades de venta</p>
+            <div class="uc-result">&#8594; Asignaci&oacute;n inteligente que convierte picos de volumen en picos de venta</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ASESORIAS -->
+      <div class="uc-sector-block" id="uc-asesoria">
+        <div class="uc-sector-header">
+          <div class="uc-sector-icon">&#128188;</div>
+          <div>
+            <div class="uc-sector-name">Asesor&iacute;as y despachos profesionales</div>
+            <p class="uc-sector-intro">Decenas de clientes, cada uno con <strong>su canal preferido</strong>. Uno manda facturas por WhatsApp, otro por email, otro llama para dictarlas. El contexto se fragmenta y los plazos fiscales no esperan</p>
+          </div>
+        </div>
+        <div class="uc-cards">
+          <div class="uc-card">
+            <div class="uc-card-tag connect">FENIX Connect</div>
+            <h4>Toda la documentaci&oacute;n en un solo hilo</h4>
+            <p>El cliente manda factura por WhatsApp, pregunta por email si la recibiste y llama dos d&iacute;as despu&eacute;s. Las tres interacciones se ven en un &uacute;nico hilo. El asesor sabe exactamente qu&eacute; tiene y qu&eacute; falta</p>
+            <div class="uc-result">&#8594; Todo lo del cliente en un panel, da igual por d&oacute;nde lo mand&oacute;</div>
+          </div>
+          <div class="uc-card">
+            <div class="uc-card-tag pulse">FENIX Pulse</div>
+            <h4>Llamadas complejas transcritas y resumidas</h4>
+            <p>El cliente llama 15 minutos dando instrucciones sobre su declaraci&oacute;n. Pulse transcribe autom&aacute;ticamente y la IA genera resumen estructurado con puntos clave y acciones pendientes. Sin notas manuales</p>
+            <div class="uc-result">&#8594; Cada llamada queda documentada con resumen ejecutivo autom&aacute;tico</div>
+          </div>
+          <div class="uc-card">
+            <div class="uc-card-tag f360">FENIX 360</div>
+            <h4>Plazos cr&iacute;ticos detectados en conversaciones</h4>
+            <p>El cliente menciona en llamada que "necesita la declaraci&oacute;n antes del viernes". La IA extrae la urgencia temporal y genera alerta vinculada al expediente, evitando que se pierda entre 50 tareas pendientes</p>
+            <div class="uc-result">&#8594; Plazos y urgencias extra&iacute;dos de conversaciones autom&aacute;ticamente</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SEGUROS -->
+      <div class="uc-sector-block" id="uc-seguros">
+        <div class="uc-sector-header">
+          <div class="uc-sector-icon">&#128737;</div>
+          <div>
+            <div class="uc-sector-name">Seguros</div>
+            <p class="uc-sector-intro">La relaci&oacute;n se construye en las renovaciones y se destruye en los siniestros. <strong>El tono de una sola llamada puede predecir si el cliente renueva o se va</strong></p>
+          </div>
+        </div>
+        <div class="uc-cards">
+          <div class="uc-card">
+            <div class="uc-card-tag pulse">FENIX Pulse</div>
+            <h4>Siniestros documentados autom&aacute;ticamente</h4>
+            <p>Asegurado llama nervioso a reportar siniestro. Pulse transcribe, extrae datos (fecha, ubicaci&oacute;n, da&ntilde;os) y genera resumen estructurado listo para abrir expediente sin que el agente teclee nada</p>
+            <div class="uc-result">&#8594; Apertura de expediente en minutos en vez de horas</div>
+          </div>
+          <div class="uc-card">
+            <div class="uc-card-tag pulse">FENIX Pulse</div>
+            <h4>Riesgo de fuga detectado 60 d&iacute;as antes</h4>
+            <p>Faltan 2 meses para renovaci&oacute;n. El cliente llam&oacute; dos veces con sentimiento negativo. Pulse genera alerta de riesgo con motivo probable extra&iacute;do de transcripciones para que comercial act&uacute;e a tiempo</p>
+            <div class="uc-result">&#8594; Intervenci&oacute;n proactiva antes de perder la p&oacute;liza</div>
+          </div>
+          <div class="uc-card">
+            <div class="uc-card-tag f360">FENIX 360</div>
+            <h4>Oportunidades de venta cruzada por IA</h4>
+            <p>En llamada rutinaria, el cliente menciona que compr&oacute; segunda vivienda. La IA detecta la menci&oacute;n y genera oportunidad comercial vinculada: "posible p&oacute;liza de hogar adicional"</p>
+            <div class="uc-result">&#8594; Cross-selling detectado autom&aacute;ticamente de las conversaciones</div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
@@ -783,6 +956,13 @@ window.addEventListener('scroll',()=>n.classList.toggle('scrolled',scrollY>50));
 const obs=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('vis');obs.unobserve(x.target)}})},{threshold:.12});
 document.querySelectorAll('.fi').forEach(e=>obs.observe(e));
 document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();const t=document.querySelector(a.getAttribute('href'));if(t)t.scrollIntoView({behavior:'smooth',block:'start'})}));
+
+function showSector(id,btn){
+  document.querySelectorAll('.uc-sector-block').forEach(b=>b.classList.remove('active'));
+  document.querySelectorAll('.uc-tab').forEach(t=>t.classList.remove('active'));
+  document.getElementById('uc-'+id).classList.add('active');
+  btn.classList.add('active');
+}
 
 function toggleMobileMenu(){
   document.querySelector('.mobile-menu').classList.toggle('active');
