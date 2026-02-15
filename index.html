@@ -350,7 +350,7 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:2.5rem 2.
 @media(max-width:900px){
   .hero-inner{grid-template-columns:1fr;text-align:center}
   .hero h1{font-size:2.4rem}
-  .hero .sub{margin:0 auto 2rem}
+  .hero .sub{margin:0 auto 2rem;font-size:1rem}
   .hero-ctas{justify-content:center}
   .hero-proof{justify-content:center}
   .hero-visual{display:none}
@@ -362,6 +362,7 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:2.5rem 2.
   .nav-links{display:none}
   .mobile-menu-btn{display:block}
   .stitle{font-size:1.9rem}
+  .btn{min-height:44px}
 }
 
 @media(max-width:768px) and (min-width:601px){
@@ -369,37 +370,50 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:2.5rem 2.
   section{padding:4rem 2rem}
   .hero{padding:6rem 2rem 4rem}
   .hero h1{font-size:2.2rem}
-  .btn{min-height:44px}
   input,select{font-size:16px}
+  .impact-inner{grid-template-columns:repeat(2,1fr)}
+  .impact-num{font-size:2.5rem}
 }
 
 @media(max-width:600px){
   .mobile-menu-btn{display:block}
-  nav{padding:1rem 1.5rem}
+  nav{padding:.8rem 1.2rem}
   .nav-brand{font-size:1rem}
-  section{padding:3rem 1.5rem}
-  .hero{padding:5rem 1.5rem 3rem;min-height:auto}
+  section{padding:3rem 1.2rem}
+  .hero{padding:5rem 1.2rem 2.5rem;min-height:auto}
   .hero h1{font-size:1.75rem;line-height:1.2}
-  .hero .sub{font-size:1rem}
-  .stitle{font-size:1.5rem}
-  .sdesc{font-size:.9rem}
+  .hero .sub{font-size:.95rem}
+  .stitle{font-size:1.4rem}
+  .sdesc{font-size:.88rem}
   .sec-grid{grid-template-columns:1fr}
   .impact-inner{grid-template-columns:1fr}
+  .impact-num{font-size:2.2rem}
   .ch-strip{gap:.8rem;flex-direction:column}
   .ch-item{min-width:auto;width:100%;padding:1rem}
   .hero-stats{gap:1.5rem;flex-wrap:wrap}
-  .btn{padding:1rem 1.5rem;font-size:.9rem;min-height:44px}
+  .btn{padding:.85rem 1.4rem;font-size:.88rem;min-height:44px}
   .hero-ctas{flex-direction:column;width:100%}
   .hero-ctas .btn{width:100%;justify-content:center}
-  input,select{font-size:16px}
+  input,select{font-size:16px;width:100%}
   button[type="submit"]{min-height:48px}
-  .ft-links{flex-direction:column;gap:1rem;text-align:center}
+  .ft-links{flex-direction:column;gap:.8rem;text-align:center}
   .ft-inner{flex-direction:column;text-align:center}
-  footer{padding:2rem 1.5rem 1rem}
-  .table-wrapper{border-radius:8px}
-  .tiers-tbl th,.tiers-tbl td,.cmp-tbl th,.cmp-tbl td{padding:.5rem .6rem;font-size:.72rem}
-  .impact{padding:3rem 1.5rem}
-  .problem{padding:3rem 1.5rem}
+  footer{padding:1.5rem 1.2rem 1rem}
+  .table-wrapper{border-radius:8px;-webkit-overflow-scrolling:touch}
+  .tiers-tbl,.cmp-tbl{min-width:auto}
+  .tiers-tbl th,.tiers-tbl td,.cmp-tbl th,.cmp-tbl td{padding:.4rem .35rem;font-size:.65rem;white-space:nowrap}
+  .impact{padding:3rem 1.2rem}
+  .problem{padding:3rem 1.2rem}
+  .problem-card .num{font-size:1.8rem}
+  .pr-price{font-size:2rem}
+  .faq-q{padding:1.2rem 0}
+  .roi-calc{padding:1.5rem}
+  .roi-scenario .save{font-size:1.5rem}
+  .uc-cards{grid-template-columns:1fr}
+  .uc-sector-header{flex-direction:column;gap:.6rem}
+  .uc-sector-icon{font-size:2rem}
+  .part-card{padding:1.5rem}
+  .test-grid{grid-template-columns:1fr}
 }
 </style>
 
@@ -472,8 +486,8 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:2.5rem 2.
   <div class="hero-inner">
     <div>
       <div class="hero-badge"><span class="dot"></span> ROI demostrable en 30 d&iacute;as</div>
-      <h1>Cada llamada sin analizar te cuesta <span class="hl">dinero real</span></h1>
-      <p class="sub">Las PYMEs pierden un 23% de oportunidades comerciales por falta de visibilidad en sus comunicaciones. FENIX IA las recupera analizando 5 canales con inteligencia artificial</p>
+      <h1>Tus comunicaciones dispersas te cuestan <span class="hl">dinero real</span></h1>
+      <p class="sub">Llamadas, emails, WhatsApp, Telegram y Meta en una sola vista. Ve todo lo que pasa, interact&uacute;a m&aacute;s r&aacute;pido y recupera el 23% de oportunidades que hoy se pierden entre canales</p>
       <div class="hero-ctas">
         <a href="#contacto" class="btn btn-primary">Ver mi ROI estimado &rarr;</a>
         <a href="#resultados" class="btn btn-outline">Ver resultados reales</a>
@@ -582,31 +596,31 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:2.5rem 2.
 <section id="productos">
   <div class="container">
     <span class="tag">Productos</span>
-    <h2 class="stitle">Tres soluciones. ROI medible desde el d&iacute;a 1</h2>
-    <p class="sdesc">Cada producto est&aacute; dise&ntilde;ado para generar retorno inmediato en tus comunicaciones</p>
+    <h2 class="stitle">Una vista unificada. Tres formas de sacarle partido</h2>
+    <p class="sdesc">Centraliza tus comunicaciones, a&ntilde;&aacute;dele inteligencia o haz las dos cosas. ROI medible desde el d&iacute;a 1</p>
     <div class="pgrid">
       <div class="pcard fi">
         <div class="pcard-top"></div>
         <div class="pcard-roi">&#128200; ROI: 5.8x</div>
         <div class="pname">FENIX <span class="a1">PULSE</span></div>
-        <div class="ptype">Analytics multicanal con IA</div>
-        <p class="pdesc">Detecta oportunidades ocultas y riesgos de churn en todas tus conversaciones. Convierte datos en acciones</p>
+        <div class="ptype">Entiende qu&eacute; pasa en tus comunicaciones</div>
+        <p class="pdesc">La IA lee y transcribe todo. Te resume lo importante, detecta oportunidades de venta y te avisa si un cliente se quiere ir</p>
         <ul class="pfeats"><li>Transcripci&oacute;n autom&aacute;tica de llamadas</li><li>An&aacute;lisis de sentimiento multicanal</li><li>Detecci&oacute;n de keywords y oportunidades</li><li>Alertas de churn y leads fr&iacute;os</li><li>Dashboard de calidad de atenci&oacute;n</li><li>Res&uacute;menes accionables con IA</li></ul>
       </div>
       <div class="pcard fi s1">
         <div class="pcard-top"></div>
         <div class="pcard-roi">&#128200; ROI: 4.2x</div>
         <div class="pname">FENIX <span class="a2">CONNECT</span></div>
-        <div class="ptype">Hub de comunicaciones unificado</div>
-        <p class="pdesc">Elimina los puntos ciegos. Ninguna conversaci&oacute;n se pierde entre canales, cada mensaje tiene contexto completo</p>
+        <div class="ptype">Todas tus conversaciones en un solo sitio</div>
+        <p class="pdesc">Una bandeja &uacute;nica para los 5 canales. Ve todo, responde desde ah&iacute; mismo y que ning&uacute;n cliente se quede sin atender</p>
         <ul class="pfeats"><li>Bandeja unificada 5 canales</li><li>Asignaci&oacute;n autom&aacute;tica por reglas</li><li>Historial completo por cliente</li><li>Integraci&oacute;n con CRMs</li><li>Plantillas y respuestas r&aacute;pidas</li><li>M&eacute;tricas de tiempo de respuesta</li></ul>
       </div>
       <div class="pcard fi s2">
         <div class="pcard-top"></div>
         <div class="pcard-roi">&#128200; ROI: 9.2x</div>
         <div class="pname">FENIX <span class="a3">360</span></div>
-        <div class="ptype">Bundle completo &bull; Pulse + Connect</div>
-        <p class="pdesc">M&aacute;ximo retorno. Analiza, centraliza y act&uacute;a sobre todas las comunicaciones. El paquete completo con el mayor ahorro</p>
+        <div class="ptype">Ve, entiende y responde. Todo en uno</div>
+        <p class="pdesc">La vista unificada de Connect + la inteligencia de Pulse. Ves todas las comunicaciones, la IA te dice qu&eacute; es urgente y respondes sin cambiar de herramienta</p>
         <ul class="pfeats"><li>Todo de FENIX Pulse</li><li>Todo de FENIX Connect</li><li>Comunicaciones ilimitadas</li><li>Onboarding personalizado</li><li>Soporte prioritario</li><li>Ahorro del 20% vs separados</li></ul>
       </div>
     </div>
