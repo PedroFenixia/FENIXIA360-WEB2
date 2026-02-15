@@ -487,7 +487,7 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:2.5rem 2.
     <div>
       <div class="hero-badge"><span class="dot"></span> ROI demostrable en 30 d&iacute;as</div>
       <h1>Tus comunicaciones dispersas te cuestan <span class="hl">dinero real</span></h1>
-      <p class="sub">Llamadas, emails, WhatsApp, Telegram y Meta en una sola vista. La IA analiza cada comunicaci&oacute;n &mdash; llamadas, WhatsApp, emails, Telegram, Meta &mdash; y detecta las oportunidades de venta, los clientes en riesgo y los riesgos, para que puedas actuar a tiempo y evitar males mayores. As&iacute; es como las empresas recuperan ese 23%</p>
+      <p class="sub">Unifica todos tus canales &mdash; llamadas, emails, WhatsApp, Telegram y Meta. La IA encuentra las oportunidades de venta ocultas en cada conversaci&oacute;n, detecta los clientes en riesgo y te dice d&oacute;nde actuar antes de que sea tarde. As&iacute; es como las empresas recuperan ese 23%</p>
       <div class="hero-ctas">
         <a href="#contacto" class="btn btn-primary">Ver mi ROI estimado &rarr;</a>
         <a href="#resultados" class="btn btn-outline">Ver resultados reales</a>
@@ -1095,7 +1095,7 @@ async function submitToHolded(e){
       await fetch('https://api.holded.com/api/crm/v1/leads',{
         method:'POST',
         headers:{'Content-Type':'application/json','key':HKEY},
-        body:JSON.stringify({name:name+' - '+product,contactId:cData.id,notes:'Empresa: '+company+'\nProducto: '+product+'\nWeb: '+location.hostname})
+        body:JSON.stringify({name:name+' ('+product+')',contactId:cData.id,notes:'Empresa: '+company+'\nProducto: '+product+'\nWeb: '+location.hostname})
       }).catch(()=>{});
     }
   }catch(err){console.warn('Holded:',err.message)}
