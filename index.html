@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FENIX IA — Recupera hasta el 23% de oportunidades perdidas en tus comunicaciones</title>
+
+<!-- SEO Meta Tags -->
+<meta name="description" content="PYMEs que usan FENIX IA recuperan un 23% de oportunidades comerciales perdidas. Analiza llamadas, emails, WhatsApp, Telegram y Meta con IA desde 99€/mes. ROI demostrable en 30 días.">
+<meta name="keywords" content="análisis comunicaciones IA, ROI comunicaciones empresa, transcripción llamadas, oportunidades perdidas, hub comunicaciones, analytics multicanal, FENIX IA, mejorar ventas">
+<meta name="author" content="FENIX IA SOLUTIONS">
+<meta name="robots" content="index, follow">
+<meta name="language" content="Spanish">
+<meta name="theme-color" content="#0d9488">
+<link rel="canonical" href="https://web2.fenixia360.com/">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://web2.fenixia360.com/">
+<meta property="og:title" content="FENIX IA — Recupera el 23% de oportunidades que pierdes en tus comunicaciones">
+<meta property="og:description" content="Analiza con IA todas tus comunicaciones empresariales. ROI demostrable en 30 días. Desde 99€/mes con comunicaciones ilimitadas.">
+<meta property="og:image" content="https://web2.fenixia360.com/og-image.png">
+<meta property="og:site_name" content="FENIX IA">
+<meta property="og:locale" content="es_ES">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="https://web2.fenixia360.com/">
+<meta name="twitter:title" content="FENIX IA — ROI demostrable en tus comunicaciones">
+<meta name="twitter:description" content="Recupera oportunidades perdidas con IA. Analiza 5 canales de comunicación desde 99€/mes.">
+<meta name="twitter:image" content="https://web2.fenixia360.com/twitter-card.png">
+
+<!-- Preconnect & DNS Prefetch -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="dns-prefetch" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#ffffff;--bg2:#f8fafb;--bg3:#f1f5f9;--card:#ffffff;
+  --teal:#0d9488;--teal-light:#14b8a6;--teal-pale:#ccfbf1;--teal-glow:rgba(13,148,136,.08);
+  --text:#0f172a;--text2:#334155;--text3:#64748b;--text4:#94a3b8;
+  --border:#e2e8f0;--border2:#cbd5e1;
+  --purple:#7c3aed;--green:#059669;--orange:#d97706;--red:#dc2626;
+  --emerald-grad:linear-gradient(135deg,#0d9488,#059669);
+  --font:'Inter',system-ui,-apple-system,sans-serif;--mono:'JetBrains Mono',monospace;
+}
+html{scroll-behavior:smooth;font-size:16px}
+body{font-family:var(--font);background:var(--bg);color:var(--text2);line-height:1.7;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+a{color:var(--teal);text-decoration:none;transition:all .2s}
+a:hover{color:var(--teal-light)}
+::selection{background:var(--teal);color:#fff}
+img{max-width:100%}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:flex;align-items:center;justify-content:space-between;background:rgba(255,255,255,.88);backdrop-filter:blur(20px) saturate(1.4);border-bottom:1px solid transparent;transition:all .3s}
+nav.scrolled{border-bottom-color:var(--border);box-shadow:0 1px 3px rgba(0,0,0,.04)}
+.nav-logo{display:flex;align-items:center;gap:.6rem}
+.nav-brand{font-weight:800;font-size:1.15rem;color:var(--text);letter-spacing:.5px}
+.nav-brand em{font-style:normal;color:var(--teal)}
+.nav-links{display:flex;gap:2rem;align-items:center}
+.nav-links a{color:var(--text3);font-weight:500;font-size:.85rem;transition:color .2s}
+.nav-links a:hover{color:var(--teal)}
+
+/* BUTTONS */
+.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.7rem 1.6rem;border-radius:8px;font-weight:600;font-size:.88rem;transition:all .2s;cursor:pointer;border:none;font-family:var(--font);letter-spacing:.1px}
+.btn-primary{background:var(--emerald-grad);color:#fff !important;box-shadow:0 1px 3px rgba(13,148,136,.2),0 4px 12px rgba(13,148,136,.12)}
+.btn-primary:hover{transform:translateY(-1px);box-shadow:0 4px 16px rgba(13,148,136,.25),0 8px 24px rgba(13,148,136,.15);color:#fff !important}
+.btn-outline{background:transparent;color:var(--teal);border:1.5px solid var(--border2)}
+.btn-outline:hover{border-color:var(--teal);background:var(--teal-glow)}
+.btn-ghost{background:var(--teal-glow);color:var(--teal);border:none}
+.btn-ghost:hover{background:rgba(13,148,136,.12)}
+
+/* MOBILE MENU */
+.mobile-menu-btn{display:none;background:none;border:none;color:var(--text);font-size:1.5rem;cursor:pointer;padding:.5rem;z-index:101}
+.mobile-menu{position:fixed;top:0;left:-100%;width:80%;max-width:320px;height:100vh;background:var(--bg);padding:5rem 2rem 2rem;transition:left .3s ease;z-index:99;box-shadow:4px 0 24px rgba(0,0,0,.08)}
+.mobile-menu.active{left:0}
+.mobile-overlay{position:fixed;top:0;left:0;width:100%;height:100vh;background:rgba(15,23,42,.4);opacity:0;visibility:hidden;transition:all .3s;z-index:98}
+.mobile-overlay.active{opacity:1;visibility:visible}
+.mobile-menu a{display:block;padding:.9rem 0;color:var(--text2);font-size:.95rem;font-weight:500;border-bottom:1px solid var(--border)}
+.mobile-menu a:hover{color:var(--teal)}
+.mobile-menu .btn{margin-top:1.5rem;width:100%;text-align:center;justify-content:center}
+
+/* HERO */
+.hero{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden;padding:8rem 2.5rem 5rem;background:linear-gradient(180deg,var(--bg) 0%,var(--bg2) 100%)}
+.hero::before{content:'';position:absolute;top:-40%;right:-20%;width:800px;height:800px;background:radial-gradient(circle,rgba(13,148,136,.06) 0%,transparent 65%);pointer-events:none}
+.hero::after{content:'';position:absolute;bottom:-30%;left:-15%;width:600px;height:600px;background:radial-gradient(circle,rgba(124,58,237,.04) 0%,transparent 65%);pointer-events:none}
+.hero-inner{max-width:1140px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;position:relative;z-index:1}
+.hero-badge{display:inline-flex;align-items:center;gap:.5rem;padding:.4rem 1rem;border-radius:100px;background:var(--teal-pale);color:var(--teal);font-size:.78rem;font-weight:600;margin-bottom:1.5rem;letter-spacing:.3px}
+.hero-badge .dot{width:6px;height:6px;border-radius:50%;background:var(--teal);animation:pulse-dot 2s infinite}
+@keyframes pulse-dot{0%,100%{opacity:1}50%{opacity:.4}}
+.hero h1{font-size:3.2rem;font-weight:900;line-height:1.1;color:var(--text);margin-bottom:1.2rem;letter-spacing:-.8px}
+.hero h1 .hl{background:var(--emerald-grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hero .sub{font-size:1.08rem;color:var(--text3);line-height:1.75;margin-bottom:2rem;max-width:480px}
+.hero-ctas{display:flex;gap:1rem;flex-wrap:wrap;margin-bottom:2rem}
+.hero-proof{display:flex;align-items:center;gap:1rem;padding-top:1.5rem;border-top:1px solid var(--border)}
+.hero-proof .avatars{display:flex}
+.hero-proof .avatars span{width:32px;height:32px;border-radius:50%;border:2px solid #fff;margin-left:-8px;display:flex;align-items:center;justify-content:center;font-size:.7rem;font-weight:700;color:#fff}
+.hero-proof .avatars span:first-child{margin-left:0}
+.hero-proof .avatars span:nth-child(1){background:#0d9488}
+.hero-proof .avatars span:nth-child(2){background:#7c3aed}
+.hero-proof .avatars span:nth-child(3){background:#d97706}
+.hero-proof .avatars span:nth-child(4){background:#059669}
+.hero-proof p{font-size:.82rem;color:var(--text3)}
+.hero-proof p strong{color:var(--text);font-weight:700}
+
+/* HERO - ROI VISUAL */
+.hero-visual{position:relative}
+.roi-card{background:var(--card);border-radius:16px;border:1px solid var(--border);padding:2rem;box-shadow:0 4px 24px rgba(0,0,0,.06),0 1px 3px rgba(0,0,0,.04);position:relative}
+.roi-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:1.5rem;padding-bottom:1rem;border-bottom:1px solid var(--border)}
+.roi-header span{font-size:.75rem;font-weight:600;color:var(--text4);text-transform:uppercase;letter-spacing:1px}
+.roi-header .live{display:flex;align-items:center;gap:.4rem;color:var(--green);font-size:.72rem;font-weight:600}
+.roi-header .live::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--green);animation:pulse-dot 1.5s infinite}
+.roi-metric{text-align:center;margin-bottom:1.5rem}
+.roi-metric .big{font-size:4rem;font-weight:900;font-family:var(--mono);letter-spacing:-3px;background:var(--emerald-grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1}
+.roi-metric .label{font-size:.82rem;color:var(--text3);margin-top:.3rem}
+.roi-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.roi-stat{text-align:center;padding:1rem .5rem;border-radius:10px;background:var(--bg2)}
+.roi-stat .val{font-size:1.4rem;font-weight:800;font-family:var(--mono);color:var(--text);letter-spacing:-1px}
+.roi-stat .val.green{color:var(--green)}
+.roi-stat .val.red{color:var(--red)}
+.roi-stat .val.teal{color:var(--teal)}
+.roi-stat .lbl{font-size:.68rem;color:var(--text4);margin-top:.2rem;text-transform:uppercase;letter-spacing:.5px}
+.roi-bar{margin-top:1.2rem;padding:1rem;background:var(--teal-pale);border-radius:8px;display:flex;align-items:center;gap:.6rem}
+.roi-bar .ico{font-size:1.2rem}
+.roi-bar p{font-size:.78rem;color:var(--teal);font-weight:600}
+.floating-card{position:absolute;background:var(--card);border-radius:10px;padding:.8rem 1rem;border:1px solid var(--border);box-shadow:0 8px 24px rgba(0,0,0,.08);font-size:.75rem;animation:float-up 6s ease-in-out infinite}
+.floating-card.fc1{top:-12px;right:-20px;animation-delay:0s}
+.floating-card.fc2{bottom:20px;left:-30px;animation-delay:3s}
+@keyframes float-up{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+.fc-val{font-weight:800;font-family:var(--mono);font-size:1.1rem}
+.fc-val.green{color:var(--green)}
+.fc-val.teal{color:var(--teal)}
+.fc-lbl{color:var(--text4);font-size:.68rem}
+
+/* IMPACT NUMBERS */
+.impact{padding:5rem 2.5rem;background:var(--bg2);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.impact-inner{max-width:1140px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:2rem}
+.impact-item{text-align:center;padding:1.5rem}
+.impact-num{font-size:3rem;font-weight:900;font-family:var(--mono);letter-spacing:-2px;line-height:1}
+.impact-num.t{color:var(--teal)}
+.impact-num.g{color:var(--green)}
+.impact-num.p{color:var(--purple)}
+.impact-num.o{color:var(--orange)}
+.impact-lbl{font-size:.88rem;color:var(--text3);margin-top:.5rem;line-height:1.4}
+.impact-detail{font-size:.72rem;color:var(--text4);margin-top:.25rem}
+
+/* SECTIONS COMMON */
+section{padding:6rem 2.5rem}
+.container{max-width:1140px;margin:0 auto}
+.tag{display:inline-flex;align-items:center;gap:.4rem;font-size:.72rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--teal);margin-bottom:.8rem;padding:.35rem .9rem;border-radius:6px;background:var(--teal-pale)}
+.stitle{font-size:2.4rem;font-weight:900;color:var(--text);line-height:1.15;margin-bottom:1rem;letter-spacing:-.5px}
+.sdesc{color:var(--text3);font-size:1rem;max-width:560px;line-height:1.75}
+.center{text-align:center}.center .sdesc{margin:0 auto}
+
+/* PROBLEM SECTION */
+.problem{background:var(--text);color:#fff;padding:6rem 2.5rem;position:relative;overflow:hidden}
+.problem::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:radial-gradient(ellipse at 30% 50%,rgba(13,148,136,.1),transparent 60%)}
+.problem .container{position:relative;z-index:1}
+.problem .tag{background:rgba(13,148,136,.15);color:var(--teal-light)}
+.problem .stitle{color:#fff}
+.problem .sdesc{color:rgba(255,255,255,.6)}
+.problem-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3rem}
+.problem-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:1.8rem;transition:all .3s}
+.problem-card:hover{background:rgba(255,255,255,.06);border-color:rgba(13,148,136,.25)}
+.problem-card .num{font-size:2.2rem;font-weight:900;font-family:var(--mono);color:var(--red);letter-spacing:-1px;margin-bottom:.5rem}
+.problem-card .num.warn{color:var(--orange)}
+.problem-card h3{font-size:1rem;font-weight:700;color:#fff;margin-bottom:.4rem}
+.problem-card p{font-size:.82rem;color:rgba(255,255,255,.5);line-height:1.5}
+
+/* PRODUCTS */
+.pgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3rem}
+.pcard{background:var(--card);border-radius:14px;padding:2rem;border:1px solid var(--border);position:relative;overflow:hidden;transition:all .3s}
+.pcard:hover{border-color:var(--teal);box-shadow:0 8px 32px rgba(13,148,136,.1);transform:translateY(-2px)}
+.pcard-top{height:3px;margin:-2rem -2rem 1.5rem;border-radius:14px 14px 0 0}
+.pcard:nth-child(1) .pcard-top{background:var(--emerald-grad)}
+.pcard:nth-child(2) .pcard-top{background:linear-gradient(90deg,var(--green),#34d399)}
+.pcard:nth-child(3) .pcard-top{background:linear-gradient(90deg,var(--purple),#a78bfa)}
+.pcard-roi{display:inline-flex;align-items:center;gap:.3rem;padding:.25rem .7rem;border-radius:100px;font-size:.7rem;font-weight:700;margin-bottom:.8rem}
+.pcard:nth-child(1) .pcard-roi{background:var(--teal-pale);color:var(--teal)}
+.pcard:nth-child(2) .pcard-roi{background:#d1fae5;color:var(--green)}
+.pcard:nth-child(3) .pcard-roi{background:#ede9fe;color:var(--purple)}
+.pname{font-size:1.2rem;font-weight:800;color:var(--text);margin-bottom:.2rem}
+.pname .a1{color:var(--teal)}.pname .a2{color:var(--green)}.pname .a3{color:var(--purple)}
+.ptype{font-size:.72rem;color:var(--text4);text-transform:uppercase;letter-spacing:1.2px;margin-bottom:.9rem}
+.pdesc{color:var(--text3);font-size:.88rem;line-height:1.6;margin-bottom:1.2rem}
+.pfeats{list-style:none;display:flex;flex-direction:column;gap:.5rem}
+.pfeats li{display:flex;align-items:flex-start;gap:.45rem;font-size:.82rem;color:var(--text3)}
+.pfeats li::before{content:'\2713';color:var(--teal);font-weight:700;flex-shrink:0}
+
+/* CHANNELS */
+.ch-section{background:var(--bg2);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.ch-strip{display:flex;justify-content:center;gap:1.5rem;margin-top:2.5rem;flex-wrap:wrap}
+.ch-item{text-align:center;padding:1.5rem 2rem;border-radius:12px;background:var(--card);border:1px solid var(--border);transition:all .3s;min-width:120px}
+.ch-item:hover{border-color:var(--teal);box-shadow:0 4px 16px rgba(13,148,136,.08)}
+.ch-item .ci{font-size:1.8rem;margin-bottom:.4rem}
+.ch-item .cn{font-size:.85rem;font-weight:700;color:var(--text)}
+.ch-item .cd{font-size:.68rem;color:var(--text4);margin-top:.15rem}
+
+/* ROI CALCULATOR */
+.roi-section{background:linear-gradient(135deg,#f0fdfa 0%,#f8fafb 50%,#faf5ff 100%)}
+.roi-calc{max-width:800px;margin:3rem auto 0;background:var(--card);border-radius:16px;border:1px solid var(--border);padding:2.5rem;box-shadow:0 4px 24px rgba(0,0,0,.04)}
+.roi-calc h3{font-size:1.1rem;font-weight:700;color:var(--text);margin-bottom:1.5rem;text-align:center}
+.roi-scenarios{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
+.roi-scenario{text-align:center;padding:1.5rem 1rem;border-radius:10px;border:1px solid var(--border);transition:all .3s}
+.roi-scenario:hover{border-color:var(--teal);background:var(--teal-glow)}
+.roi-scenario .team{font-size:.72rem;text-transform:uppercase;letter-spacing:1px;color:var(--text4);font-weight:600;margin-bottom:.6rem}
+.roi-scenario .cost{font-size:.82rem;color:var(--text3);margin-bottom:.4rem}
+.roi-scenario .save{font-size:1.8rem;font-weight:900;font-family:var(--mono);color:var(--green);letter-spacing:-1px}
+.roi-scenario .save-lbl{font-size:.72rem;color:var(--green);font-weight:600}
+.roi-footnote{text-align:center;margin-top:1.5rem;font-size:.78rem;color:var(--text4)}
+
+/* PRICING */
+#pricing{background:var(--bg2);border-top:1px solid var(--border)}
+.pr-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3rem}
+.pr-card{background:var(--card);border-radius:14px;padding:2rem;border:1px solid var(--border);position:relative;transition:all .3s}
+.pr-card:hover{box-shadow:0 8px 32px rgba(0,0,0,.06)}
+.pr-card.feat{border-color:var(--teal);box-shadow:0 0 0 1px var(--teal),0 8px 32px rgba(13,148,136,.1)}
+.pr-card.feat::before{content:'MEJOR VALOR';position:absolute;top:-11px;left:50%;transform:translateX(-50%);background:var(--emerald-grad);color:#fff;font-size:.62rem;font-weight:700;padding:.25rem .9rem;border-radius:100px;letter-spacing:1.2px}
+.pr-name{font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:.4rem}
+.pr-name.t1{color:var(--teal)}.pr-name.t2{color:var(--green)}.pr-name.t3{color:var(--purple)}
+.pr-amt{display:flex;align-items:baseline;gap:.2rem;margin-bottom:.1rem}
+.pr-amt .cur{font-size:1.1rem;color:var(--text3);font-weight:600}
+.pr-amt .num{font-size:2.8rem;font-weight:900;color:var(--text);font-family:var(--mono);letter-spacing:-2px}
+.pr-amt .per{font-size:.8rem;color:var(--text4)}
+.pr-users{font-size:.8rem;color:var(--text4);margin-bottom:1.2rem}
+.pr-roi-tag{display:inline-flex;padding:.2rem .6rem;border-radius:100px;font-size:.68rem;font-weight:600;background:#d1fae5;color:var(--green);margin-bottom:1rem}
+.pr-feats{list-style:none;display:flex;flex-direction:column;gap:.55rem;margin-bottom:1.5rem}
+.pr-feats li{font-size:.84rem;color:var(--text3);display:flex;align-items:center;gap:.4rem}
+.pr-feats li::before{content:'\2713';color:var(--teal);font-weight:700}
+.table-wrapper{overflow-x:auto;-webkit-overflow-scrolling:touch;margin-top:1.5rem}
+.tiers-tbl{width:100%;min-width:600px;border-collapse:collapse}
+.tiers-tbl th{text-align:left;padding:.7rem 1rem;font-size:.68rem;text-transform:uppercase;letter-spacing:.8px;color:var(--text4);border-bottom:2px solid var(--border);background:var(--bg2)}
+.tiers-tbl td{padding:.6rem 1rem;font-size:.84rem;border-bottom:1px solid var(--border);color:var(--text2)}
+.tiers-tbl tr:hover td{background:var(--teal-glow)}
+.tiers-tbl .hl{color:var(--teal);font-weight:700;font-family:var(--mono)}
+
+/* COMPARISON */
+.cmp-tbl{width:100%;min-width:500px;margin-top:2rem;border-collapse:separate;border-spacing:0;border-radius:12px;overflow:hidden;border:1px solid var(--border)}
+.cmp-tbl th{background:var(--bg3);padding:.7rem 1rem;font-size:.68rem;text-transform:uppercase;letter-spacing:.6px;color:var(--text4);text-align:left}
+.cmp-tbl td{padding:.6rem 1rem;font-size:.82rem;border-top:1px solid var(--border);color:var(--text2)}
+.cmp-tbl tr:last-child{background:var(--teal-pale)}
+.cmp-tbl tr:last-child td{color:var(--teal);font-weight:700}
+.cmp-tbl .x{color:var(--red);font-weight:600}
+.cmp-tbl .v{color:var(--green);font-weight:600}
+.cmp-save{display:inline-flex;padding:.2rem .5rem;border-radius:4px;background:#d1fae5;color:var(--green);font-size:.68rem;font-weight:700;font-family:var(--mono)}
+
+/* SECTORS */
+.sec-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem;margin-top:3rem}
+.sec-card{background:var(--card);border-radius:12px;padding:1.5rem;border:1px solid var(--border);transition:all .3s}
+.sec-card:hover{border-color:var(--teal);transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,.06)}
+.sec-icon{font-size:1.6rem;margin-bottom:.6rem}
+.sec-name{font-size:.92rem;font-weight:700;color:var(--text);margin-bottom:.3rem}
+.sec-desc{font-size:.78rem;color:var(--text4);line-height:1.5}
+.sec-roi{display:inline-flex;align-items:center;gap:.3rem;margin-top:.5rem;padding:.2rem .5rem;border-radius:4px;background:#d1fae5;color:var(--green);font-size:.68rem;font-weight:700}
+
+/* TESTIMONIALS */
+.test-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3rem}
+.test-card{background:var(--card);border-radius:14px;padding:1.8rem;border:1px solid var(--border);transition:all .3s}
+.test-card:hover{box-shadow:0 8px 24px rgba(0,0,0,.06)}
+.test-stars{color:var(--orange);font-size:.85rem;margin-bottom:.8rem;letter-spacing:2px}
+.test-quote{font-size:.88rem;color:var(--text2);line-height:1.6;font-style:italic;margin-bottom:1rem}
+.test-author{display:flex;align-items:center;gap:.6rem}
+.test-avatar{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.75rem;font-weight:700;color:#fff}
+.test-name{font-size:.82rem;font-weight:700;color:var(--text)}
+.test-role{font-size:.7rem;color:var(--text4)}
+
+/* CTA */
+.cta-sec{background:linear-gradient(135deg,#0f172a 0%,#1e293b 100%);color:#fff;position:relative;overflow:hidden}
+.cta-sec::before{content:'';position:absolute;top:-50%;right:-20%;width:600px;height:600px;background:radial-gradient(circle,rgba(13,148,136,.15),transparent 60%);pointer-events:none}
+.cta-sec .tag{background:rgba(13,148,136,.15);color:var(--teal-light)}
+.cta-sec .stitle{color:#fff}
+.cta-sec .sdesc{color:rgba(255,255,255,.6)}
+input,select{padding:.8rem 1.1rem;border-radius:8px;border:1px solid var(--border);background:rgba(255,255,255,.06);color:#fff;font-family:var(--font);font-size:.88rem;outline:none;transition:border .2s;width:100%}
+input:focus,select:focus{border-color:var(--teal-light)}
+input::placeholder{color:rgba(255,255,255,.35)}
+select{color:rgba(255,255,255,.5)}
+select option{background:var(--text);color:#fff}
+
+/* FOOTER */
+footer{background:var(--bg);border-top:1px solid var(--border);padding:2.5rem 2.5rem 1.5rem}
+.ft-inner{max-width:1140px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1.5rem}
+.ft-brand{font-weight:700;font-size:.95rem;color:var(--text)}
+.ft-brand em{font-style:normal;color:var(--teal)}
+.ft-links{display:flex;gap:2rem}
+.ft-links a{color:var(--text3);font-size:.82rem}
+.ft-links a:hover{color:var(--teal)}
+.ft-copy{color:var(--text4);font-size:.72rem;text-align:center;margin-top:1.5rem;padding-top:1rem;border-top:1px solid var(--border);max-width:1140px;margin-left:auto;margin-right:auto}
+.ft-legal{display:flex;justify-content:center;gap:2rem;flex-wrap:wrap;max-width:1140px;margin:.8rem auto 0}
+.ft-legal a{color:var(--text4);font-size:.72rem;transition:color .2s}
+.ft-legal a:hover{color:var(--teal)}
+
+/* ANIMATIONS */
+.fi{opacity:0;transform:translateY(20px);transition:all .5s ease-out}
+.fi.vis{opacity:1;transform:translateY(0)}
+.s1{transition-delay:.07s}.s2{transition-delay:.14s}.s3{transition-delay:.21s}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .hero-inner{grid-template-columns:1fr;text-align:center}
+  .hero h1{font-size:2.4rem}
+  .hero .sub{margin:0 auto 2rem}
+  .hero-ctas{justify-content:center}
+  .hero-proof{justify-content:center}
+  .hero-visual{display:none}
+  .pgrid,.pr-grid,.test-grid{grid-template-columns:1fr}
+  .problem-grid{grid-template-columns:1fr}
+  .sec-grid{grid-template-columns:repeat(2,1fr)}
+  .impact-inner{grid-template-columns:repeat(2,1fr)}
+  .roi-scenarios{grid-template-columns:1fr}
+  .nav-links{display:none}
+  .mobile-menu-btn{display:block}
+  .stitle{font-size:1.9rem}
+}
+
+@media(max-width:768px) and (min-width:601px){
+  nav{padding:1rem 2rem}
+  section{padding:4rem 2rem}
+  .hero{padding:6rem 2rem 4rem}
+  .hero h1{font-size:2.2rem}
+  .btn{min-height:44px}
+  input,select{font-size:16px}
+}
+
+@media(max-width:600px){
+  .mobile-menu-btn{display:block}
+  nav{padding:1rem 1.5rem}
+  .nav-brand{font-size:1rem}
+  section{padding:3rem 1.5rem}
+  .hero{padding:5rem 1.5rem 3rem;min-height:auto}
+  .hero h1{font-size:1.75rem;line-height:1.2}
+  .hero .sub{font-size:1rem}
+  .stitle{font-size:1.5rem}
+  .sdesc{font-size:.9rem}
+  .sec-grid{grid-template-columns:1fr}
+  .impact-inner{grid-template-columns:1fr}
+  .ch-strip{gap:.8rem;flex-direction:column}
+  .ch-item{min-width:auto;width:100%;padding:1rem}
+  .hero-stats{gap:1.5rem;flex-wrap:wrap}
+  .btn{padding:1rem 1.5rem;font-size:.9rem;min-height:44px}
+  .hero-ctas{flex-direction:column;width:100%}
+  .hero-ctas .btn{width:100%;justify-content:center}
+  input,select{font-size:16px}
+  button[type="submit"]{min-height:48px}
+  .ft-links{flex-direction:column;gap:1rem;text-align:center}
+  .ft-inner{flex-direction:column;text-align:center}
+  footer{padding:2rem 1.5rem 1rem}
+  .table-wrapper{border-radius:8px}
+  .tiers-tbl th,.tiers-tbl td,.cmp-tbl th,.cmp-tbl td{padding:.5rem .6rem;font-size:.72rem}
+  .impact{padding:3rem 1.5rem}
+  .problem{padding:3rem 1.5rem}
+}
+</style>
+
+<!-- Schema.org Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "FENIX IA",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Web",
+  "offers": {
+    "@type": "AggregateOffer",
+    "priceCurrency": "EUR",
+    "lowPrice": "49",
+    "highPrice": "99",
+    "priceSpecification": {
+      "@type": "UnitPriceSpecification",
+      "price": "99",
+      "priceCurrency": "EUR",
+      "billingDuration": "P1M"
+    }
+  },
+  "description": "Plataforma de análisis de comunicaciones con IA. Recupera hasta el 23% de oportunidades perdidas. Analiza llamadas, email, WhatsApp, Telegram y Meta.",
+  "provider": {
+    "@type": "Organization",
+    "name": "FENIX IA SOLUTIONS",
+    "url": "https://web2.fenixia360.com",
+    "logo": "https://web2.fenixia360.com/logo.png"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "127"
+  }
+}
+</script>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="navbar">
+  <div class="nav-logo">
+    <span class="nav-brand">FENIX <em>IA</em></span>
+  </div>
+  <div class="nav-links">
+    <a href="#resultados">Resultados</a>
+    <a href="#productos">Productos</a>
+    <a href="#pricing">Precios</a>
+    <a href="#sectores">Sectores</a>
+    <a href="#contacto">Contacto</a>
+    <a href="#contacto" class="btn btn-primary">Calcular mi ROI &rarr;</a>
+  </div>
+  <button class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Men&uacute;">&#9776;</button>
+</nav>
+
+<div class="mobile-overlay" onclick="toggleMobileMenu()"></div>
+<div class="mobile-menu">
+  <a href="#resultados" onclick="toggleMobileMenu()">Resultados</a>
+  <a href="#productos" onclick="toggleMobileMenu()">Productos</a>
+  <a href="#pricing" onclick="toggleMobileMenu()">Precios</a>
+  <a href="#sectores" onclick="toggleMobileMenu()">Sectores</a>
+  <a href="#contacto" onclick="toggleMobileMenu()">Contacto</a>
+  <a href="#contacto" class="btn btn-primary" onclick="toggleMobileMenu()">Calcular mi ROI &rarr;</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <div>
+      <div class="hero-badge"><span class="dot"></span> ROI demostrable en 30 d&iacute;as</div>
+      <h1>Cada llamada sin analizar te cuesta <span class="hl">dinero real</span></h1>
+      <p class="sub">Las PYMEs pierden un 23% de oportunidades comerciales por falta de visibilidad en sus comunicaciones. FENIX IA las recupera analizando 5 canales con inteligencia artificial</p>
+      <div class="hero-ctas">
+        <a href="#contacto" class="btn btn-primary">Ver mi ROI estimado &rarr;</a>
+        <a href="#resultados" class="btn btn-outline">Ver resultados reales</a>
+      </div>
+      <div class="hero-proof">
+        <div class="avatars">
+          <span>CM</span><span>AR</span><span>LS</span><span>+</span>
+        </div>
+        <p><strong>+120 empresas</strong> ya analizan sus comunicaciones con FENIX IA</p>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="floating-card fc1">
+        <div class="fc-val green">+23%</div>
+        <div class="fc-lbl">Oportunidades recuperadas</div>
+      </div>
+      <div class="floating-card fc2">
+        <div class="fc-val teal">9.2x</div>
+        <div class="fc-lbl">ROI medio anual</div>
+      </div>
+      <div class="roi-card">
+        <div class="roi-header">
+          <span>ROI Dashboard</span>
+          <div class="live">En vivo</div>
+        </div>
+        <div class="roi-metric">
+          <div class="big">+23%</div>
+          <div class="label">Oportunidades recuperadas de media</div>
+        </div>
+        <div class="roi-stats">
+          <div class="roi-stat">
+            <div class="val green">&euro;4.720</div>
+            <div class="lbl">Ahorro / mes</div>
+          </div>
+          <div class="roi-stat">
+            <div class="val teal">347</div>
+            <div class="lbl">Comunicaciones / d&iacute;a</div>
+          </div>
+          <div class="roi-stat">
+            <div class="val red">12</div>
+            <div class="lbl">Alertas cr&iacute;ticas</div>
+          </div>
+        </div>
+        <div class="roi-bar">
+          <span class="ico">&#128200;</span>
+          <p>Tu equipo est&aacute; perdiendo ~4 oportunidades/d&iacute;a sin FENIX</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- IMPACT NUMBERS -->
+<div class="impact" id="resultados">
+  <div class="impact-inner">
+    <div class="impact-item fi">
+      <div class="impact-num t">23%</div>
+      <div class="impact-lbl">Oportunidades recuperadas</div>
+      <div class="impact-detail">Media en los primeros 90 d&iacute;as</div>
+    </div>
+    <div class="impact-item fi s1">
+      <div class="impact-num g">9.2x</div>
+      <div class="impact-lbl">ROI medio anual</div>
+      <div class="impact-detail">Por cada euro invertido</div>
+    </div>
+    <div class="impact-item fi s2">
+      <div class="impact-num p">67%</div>
+      <div class="impact-lbl">Menos tiempo en reporting</div>
+      <div class="impact-detail">Res&uacute;menes autom&aacute;ticos con IA</div>
+    </div>
+    <div class="impact-item fi s3">
+      <div class="impact-num o">&lt;24h</div>
+      <div class="impact-lbl">Time to value</div>
+      <div class="impact-detail">Activaci&oacute;n y primeros insights</div>
+    </div>
+  </div>
+</div>
+
+<!-- PROBLEM -->
+<section class="problem">
+  <div class="container">
+    <span class="tag">El problema</span>
+    <h2 class="stitle">&iquest;Cu&aacute;nto te cuesta NO saber?</h2>
+    <p class="sdesc">Cada d&iacute;a tu equipo mantiene decenas de conversaciones. Sin an&aacute;lisis, pierdes oportunidades que no puedes medir</p>
+    <div class="problem-grid">
+      <div class="problem-card fi">
+        <div class="num">23%</div>
+        <h3>Oportunidades invisibles</h3>
+        <p>De media, las PYMEs pierden 1 de cada 4 oportunidades comerciales porque nadie las detecta en las conversaciones</p>
+      </div>
+      <div class="problem-card fi s1">
+        <div class="num warn">3.2h</div>
+        <h3>Horas perdidas al d&iacute;a</h3>
+        <p>El tiempo que un equipo de 5 personas gasta en reporting manual de llamadas y seguimiento entre canales</p>
+      </div>
+      <div class="problem-card fi s2">
+        <div class="num">41%</div>
+        <h3>Clientes en riesgo</h3>
+        <p>De las se&ntilde;ales de churn llegan por canales de mensajer&iacute;a que las empresas no monitorizan sistem&aacute;ticamente</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section id="productos">
+  <div class="container">
+    <span class="tag">Productos</span>
+    <h2 class="stitle">Tres soluciones. ROI medible desde el d&iacute;a 1</h2>
+    <p class="sdesc">Cada producto est&aacute; dise&ntilde;ado para generar retorno inmediato en tus comunicaciones</p>
+    <div class="pgrid">
+      <div class="pcard fi">
+        <div class="pcard-top"></div>
+        <div class="pcard-roi">&#128200; ROI: 5.8x</div>
+        <div class="pname">FENIX <span class="a1">PULSE</span></div>
+        <div class="ptype">Analytics multicanal con IA</div>
+        <p class="pdesc">Detecta oportunidades ocultas y riesgos de churn en todas tus conversaciones. Convierte datos en acciones</p>
+        <ul class="pfeats"><li>Transcripci&oacute;n autom&aacute;tica de llamadas</li><li>An&aacute;lisis de sentimiento multicanal</li><li>Detecci&oacute;n de oportunidades con IA</li><li>Alertas de churn en tiempo real</li><li>Dashboard de calidad de atenci&oacute;n</li><li>Res&uacute;menes accionables con IA</li></ul>
+      </div>
+      <div class="pcard fi s1">
+        <div class="pcard-top"></div>
+        <div class="pcard-roi">&#128200; ROI: 4.2x</div>
+        <div class="pname">FENIX <span class="a2">CONNECT</span></div>
+        <div class="ptype">Hub de comunicaciones unificado</div>
+        <p class="pdesc">Elimina los puntos ciegos. Ninguna conversaci&oacute;n se pierde entre canales, cada mensaje tiene contexto completo</p>
+        <ul class="pfeats"><li>Bandeja unificada 5 canales</li><li>Asignaci&oacute;n autom&aacute;tica por reglas</li><li>Historial completo por cliente</li><li>Integraci&oacute;n con CRMs</li><li>Plantillas y respuestas r&aacute;pidas</li><li>M&eacute;tricas de tiempo de respuesta</li></ul>
+      </div>
+      <div class="pcard fi s2">
+        <div class="pcard-top"></div>
+        <div class="pcard-roi">&#128200; ROI: 9.2x</div>
+        <div class="pname">FENIX <span class="a3">360</span></div>
+        <div class="ptype">Bundle completo &bull; Pulse + Connect</div>
+        <p class="pdesc">M&aacute;ximo retorno. Analiza, centraliza y act&uacute;a sobre todas las comunicaciones. El paquete completo con el mayor ahorro</p>
+        <ul class="pfeats"><li>Todo de FENIX Pulse</li><li>Todo de FENIX Connect</li><li>Comunicaciones ilimitadas</li><li>Onboarding personalizado</li><li>Soporte prioritario</li><li>Ahorro del 20% vs separados</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CHANNELS -->
+<section class="ch-section" style="padding:4.5rem 2.5rem">
+  <div class="container center">
+    <span class="tag">Canales</span>
+    <h2 class="stitle">5 canales. Sin puntos ciegos. Sin excusas</h2>
+    <p class="sdesc" style="margin:0 auto">El &uacute;nico que cubre los 5 canales donde tus clientes realmente hablan</p>
+    <div class="ch-strip">
+      <div class="ch-item"><div class="ci">&#128222;</div><div class="cn">Llamadas</div><div class="cd">Transcripci&oacute;n + IA</div></div>
+      <div class="ch-item"><div class="ci">&#9993;&#65039;</div><div class="cn">Email</div><div class="cd">Hilos completos</div></div>
+      <div class="ch-item"><div class="ci">&#128172;</div><div class="cn">WhatsApp</div><div class="cd">Business API</div></div>
+      <div class="ch-item"><div class="ci">&#9992;&#65039;</div><div class="cn">Telegram</div><div class="cd">Bots + canales</div></div>
+      <div class="ch-item"><div class="ci">&#127760;</div><div class="cn">Meta</div><div class="cd">Messenger + IG</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ROI CALCULATOR -->
+<section class="roi-section">
+  <div class="container center">
+    <span class="tag">ROI estimado</span>
+    <h2 class="stitle">&iquest;Cu&aacute;nto ahorrar&iacute;as con FENIX IA?</h2>
+    <p class="sdesc" style="margin:0 auto">Comparativa de coste vs alternativas l&iacute;deres. El ahorro es real y medible desde el primer mes</p>
+    <div class="roi-calc">
+      <h3>Ahorro anual estimado vs competencia (por usuario)</h3>
+      <div class="roi-scenarios">
+        <div class="roi-scenario">
+          <div class="team">vs Gong</div>
+          <div class="cost">Gong: ~275&euro;/user &bull; FENIX: ~30&euro;/user</div>
+          <div class="save">&euro;2.940</div>
+          <div class="save-lbl">ahorro/user/a&ntilde;o</div>
+        </div>
+        <div class="roi-scenario">
+          <div class="team">vs HubSpot CI</div>
+          <div class="cost">HubSpot: ~90&euro;/user &bull; FENIX: ~30&euro;/user</div>
+          <div class="save">&euro;720</div>
+          <div class="save-lbl">ahorro/user/a&ntilde;o</div>
+        </div>
+        <div class="roi-scenario">
+          <div class="team">vs Aircall</div>
+          <div class="cost">Aircall: ~79&euro;/user &bull; FENIX: ~30&euro;/user</div>
+          <div class="save">&euro;588</div>
+          <div class="save-lbl">ahorro/user/a&ntilde;o</div>
+        </div>
+      </div>
+      <p class="roi-footnote">* FENIX 360 cubre 5 canales. Competidores cubren 1-2 canales. Coste calculado sobre plan de 6-10 usuarios</p>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing">
+  <div class="container">
+    <span class="tag">Precios</span>
+    <h2 class="stitle">Inversi&oacute;n clara. Retorno medible</h2>
+    <p class="sdesc">Comunicaciones ilimitadas en todos los planes. Sin costes ocultos. ROI demostrable</p>
+    <div class="pr-grid">
+      <div class="pr-card fi">
+        <div class="pr-name t1">FENIX PULSE</div>
+        <div class="pr-amt"><span class="cur">&euro;</span><span class="num">79</span><span class="per">/mes</span></div>
+        <div class="pr-users">1 usuario &bull; Comunicaciones ilimitadas</div>
+        <div class="pr-roi-tag">ROI medio: 5.8x</div>
+        <ul class="pr-feats"><li>Analytics IA multicanal</li><li>Transcripci&oacute;n autom&aacute;tica</li><li>Sentimiento + keywords</li><li>Dashboard de calidad</li><li>Alertas y res&uacute;menes IA</li></ul>
+        <a href="#contacto" class="btn btn-primary" style="width:100%;justify-content:center">Ver mi ROI &rarr;</a>
+      </div>
+      <div class="pr-card feat fi s1">
+        <div class="pr-name t3">FENIX 360</div>
+        <div class="pr-amt"><span class="cur">&euro;</span><span class="num">99</span><span class="per">/mes</span></div>
+        <div class="pr-users">1 usuario &bull; Comunicaciones ilimitadas</div>
+        <div class="pr-roi-tag">ROI medio: 9.2x</div>
+        <ul class="pr-feats"><li>Todo de Pulse + Connect</li><li>Hub unificado 5 canales</li><li>Onboarding personalizado</li><li>Soporte prioritario</li><li>20% ahorro vs separados</li></ul>
+        <a href="#contacto" class="btn btn-primary" style="width:100%;justify-content:center">Ver mi ROI &rarr;</a>
+      </div>
+      <div class="pr-card fi s2">
+        <div class="pr-name t2">FENIX CONNECT</div>
+        <div class="pr-amt"><span class="cur">&euro;</span><span class="num">49</span><span class="per">/mes</span></div>
+        <div class="pr-users">1 usuario &bull; Comunicaciones ilimitadas</div>
+        <div class="pr-roi-tag">ROI medio: 4.2x</div>
+        <ul class="pr-feats"><li>Hub unificado 5 canales</li><li>Asignaci&oacute;n autom&aacute;tica</li><li>Historial por cliente</li><li>Integraci&oacute;n CRM</li><li>M&eacute;tricas respuesta</li></ul>
+        <a href="#contacto" class="btn btn-primary" style="width:100%;justify-content:center">Ver mi ROI &rarr;</a>
+      </div>
+    </div>
+    <div style="margin-top:3rem">
+      <h3 style="font-size:1.1rem;font-weight:700;color:var(--text)">Todos los tramos de precio</h3>
+      <div class="table-wrapper">
+        <table class="tiers-tbl"><thead><tr><th>Usuarios</th><th>Pulse</th><th>Connect</th><th>360 Bundle</th><th>Onboard. Pulse</th><th>Onboard. Connect</th><th>Onboard. 360</th><th>Comunicaciones</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>79&euro;</td><td>49&euro;</td><td class="hl">99&euro;/mes</td><td>299&euro;</td><td>199&euro;</td><td>499&euro;</td><td>Ilimitadas</td></tr>
+          <tr><td>2</td><td>119&euro;</td><td>79&euro;</td><td class="hl">159&euro;/mes</td><td>299&euro;</td><td>199&euro;</td><td>499&euro;</td><td>Ilimitadas</td></tr>
+          <tr><td>3-5</td><td>149&euro;</td><td>99&euro;</td><td class="hl">199&euro;/mes</td><td>299&euro;</td><td>199&euro;</td><td>499&euro;</td><td>Ilimitadas</td></tr>
+          <tr><td>6-10</td><td>229&euro;</td><td>149&euro;</td><td class="hl">299&euro;/mes</td><td>399&euro;</td><td>249&euro;</td><td>549&euro;</td><td>Ilimitadas</td></tr>
+          <tr><td>10+</td><td colspan="7" style="text-align:center;color:var(--text4)">Contacta para precio personalizado</td></tr>
+        </tbody></table>
+      </div>
+      <p style="color:var(--text4);font-size:.75rem;margin-top:.7rem">* 20% descuento por compromiso anual. Onboarding &uacute;nico (no recurrente)</p>
+    </div>
+  </div>
+</section>
+
+<!-- COMPARE -->
+<section>
+  <div class="container center">
+    <span class="tag">Comparativa</span>
+    <h2 class="stitle">Hasta 9x m&aacute;s barato. 5x m&aacute;s canales</h2>
+    <p class="sdesc" style="margin:0 auto 1.5rem">El &uacute;nico analytics de comunicaciones que cubre todos los canales a precio de PYME</p>
+    <div class="table-wrapper">
+      <table class="cmp-tbl"><thead><tr><th>Plataforma</th><th>&euro;/user/mes</th><th>Ahorro anual*</th><th>Llamadas</th><th>Email</th><th>WhatsApp</th><th>Telegram</th><th>Meta</th></tr></thead>
+      <tbody>
+        <tr><td>Gong</td><td>~275&euro;</td><td>&mdash;</td><td class="v">&#10003;</td><td class="v">&#10003;</td><td class="x">&#10007;</td><td class="x">&#10007;</td><td class="x">&#10007;</td></tr>
+        <tr><td>Ringover</td><td>~83&euro;</td><td>&mdash;</td><td class="v">&#10003;</td><td class="x">&#10007;</td><td class="x">&#10007;</td><td class="x">&#10007;</td><td class="x">&#10007;</td></tr>
+        <tr><td>HubSpot CI</td><td>~90&euro;</td><td>&mdash;</td><td class="v">&#10003;</td><td class="x">&#10007;</td><td class="x">&#10007;</td><td class="x">&#10007;</td><td class="x">&#10007;</td></tr>
+        <tr><td>Aircall</td><td>~79&euro;</td><td>&mdash;</td><td class="v">&#10003;</td><td class="x">&#10007;</td><td class="x">&#10007;</td><td class="x">&#10007;</td><td class="x">&#10007;</td></tr>
+        <tr><td><strong>FENIX 360</strong></td><td><strong>~30&euro;</strong></td><td><span class="cmp-save">hasta &euro;2.940/user</span></td><td class="v">&#10003;</td><td class="v">&#10003;</td><td class="v">&#10003;</td><td class="v">&#10003;</td><td class="v">&#10003;</td></tr>
+      </tbody></table>
+    </div>
+    <p style="color:var(--text4);font-size:.72rem;margin-top:.8rem">* Ahorro calculado comparando plan de 6-10 usuarios (~30&euro;/user) vs precio por usuario de cada alternativa</p>
+  </div>
+</section>
+
+<!-- SECTORS -->
+<section id="sectores" style="background:var(--bg2);border-top:1px solid var(--border)">
+  <div class="container">
+    <span class="tag">Sectores</span>
+    <h2 class="stitle">ROI real en cada sector</h2>
+    <p class="sdesc">Resultados medibles adaptados a tu industria</p>
+    <div class="sec-grid">
+      <div class="sec-card fi"><div class="sec-icon">&#127973;</div><div class="sec-name">Cl&iacute;nicas</div><div class="sec-desc">Reduce citas perdidas y mejora seguimiento de pacientes</div><div class="sec-roi">&#8593; 18% retenci&oacute;n pacientes</div></div>
+      <div class="sec-card fi s1"><div class="sec-icon">&#127968;</div><div class="sec-name">Inmobiliarias</div><div class="sec-desc">Captura leads de portales y WhatsApp sin perder ninguno</div><div class="sec-roi">&#8593; 31% conversi&oacute;n leads</div></div>
+      <div class="sec-card fi s2"><div class="sec-icon">&#128722;</div><div class="sec-name">E-commerce</div><div class="sec-desc">Postventa multicanal y detecci&oacute;n temprana de problemas</div><div class="sec-roi">&#8595; 24% devoluciones</div></div>
+      <div class="sec-card fi s3"><div class="sec-icon">&#128188;</div><div class="sec-name">Asesor&iacute;as</div><div class="sec-desc">Contexto completo de cada cliente sin fisuras entre canales</div><div class="sec-roi">&#8593; 22% satisfacci&oacute;n</div></div>
+      <div class="sec-card fi"><div class="sec-icon">&#128663;</div><div class="sec-name">Talleres</div><div class="sec-desc">Gestiona citas y reclamaciones por WhatsApp de forma profesional</div><div class="sec-roi">&#8593; 27% citas recuperadas</div></div>
+      <div class="sec-card fi s1"><div class="sec-icon">&#127891;</div><div class="sec-name">Academias</div><div class="sec-desc">Convierte consultas en matr&iacute;culas con seguimiento inteligente</div><div class="sec-roi">&#8593; 19% matr&iacute;culas</div></div>
+      <div class="sec-card fi s2"><div class="sec-icon">&#128737;</div><div class="sec-name">Seguros</div><div class="sec-desc">Monitoriza siniestros, renovaciones y detecta riesgo de fuga</div><div class="sec-roi">&#8595; 15% churn</div></div>
+      <div class="sec-card fi s3"><div class="sec-icon">&#127960;</div><div class="sec-name">Hoteler&iacute;a</div><div class="sec-desc">Mejora experiencia del hu&eacute;sped desde la reserva hasta el checkout</div><div class="sec-roi">&#8593; 0.8 pts NPS</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section>
+  <div class="container center">
+    <span class="tag">Testimonios</span>
+    <h2 class="stitle">Lo que dicen nuestros clientes</h2>
+    <p class="sdesc" style="margin:0 auto">Resultados reales de empresas que ya usan FENIX IA</p>
+    <div class="test-grid">
+      <div class="test-card fi">
+        <div class="test-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="test-quote">"En 2 meses recuperamos el 19% de leads que perd&iacute;amos por no hacer seguimiento de WhatsApp. El ROI fue inmediato"</p>
+        <div class="test-author">
+          <div class="test-avatar" style="background:var(--teal)">CM</div>
+          <div><div class="test-name">Carlos M.</div><div class="test-role">Director comercial &bull; Inmobiliaria</div></div>
+        </div>
+      </div>
+      <div class="test-card fi s1">
+        <div class="test-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="test-quote">"Las alertas de sentimiento negativo nos permiten intervenir antes de perder un paciente. Hemos reducido cancelaciones un 24%"</p>
+        <div class="test-author">
+          <div class="test-avatar" style="background:var(--purple)">AR</div>
+          <div><div class="test-name">Ana R.</div><div class="test-role">Gerente &bull; Cl&iacute;nica dental</div></div>
+        </div>
+      </div>
+      <div class="test-card fi s2">
+        <div class="test-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="test-quote">"Antes gastamos 3h diarias en reporting manual de llamadas. Con FENIX Pulse, el informe est&aacute; listo cada ma&ntilde;ana autom&aacute;ticamente"</p>
+        <div class="test-author">
+          <div class="test-avatar" style="background:var(--orange)">LS</div>
+          <div><div class="test-name">Luis S.</div><div class="test-role">CEO &bull; E-commerce</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-sec" id="contacto">
+  <div class="container center">
+    <span class="tag">Calcula tu ROI</span>
+    <h2 class="stitle">&iquest;Cu&aacute;ntas oportunidades est&aacute;s<br>perdiendo ahora mismo?</h2>
+    <p class="sdesc" style="margin:1rem auto 2.5rem">Demo gratuita de 30 min con tus datos reales. Te mostramos tu ROI estimado antes de decidir</p>
+    <form style="max-width:460px;margin:0 auto;display:flex;flex-direction:column;gap:.85rem" onsubmit="event.preventDefault();this.style.display='none';document.getElementById('ok').style.display='block'">
+      <input type="text" placeholder="Tu nombre" required>
+      <input type="email" placeholder="Email corporativo" required>
+      <input type="text" placeholder="Empresa y n&uacute;mero de empleados">
+      <select><option>Producto de inter&eacute;s</option><option>FENIX Pulse (Analytics)</option><option>FENIX Connect (Hub)</option><option>FENIX 360 (Bundle)</option><option>Solo quiero ver mi ROI</option></select>
+      <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;padding:.95rem;font-size:.95rem">Calcular mi ROI gratis &rarr;</button>
+      <p style="font-size:.72rem;color:rgba(255,255,255,.4)">Sin compromiso. Te contactamos en menos de 24h con tu estimaci&oacute;n personalizada</p>
+    </form>
+    <div id="ok" style="display:none;padding:1.8rem;background:rgba(13,148,136,.1);border-radius:10px;border:1px solid rgba(13,148,136,.2);max-width:460px;margin:0 auto">
+      <p style="font-size:1.2rem;font-weight:700;color:var(--teal-light);margin-bottom:.4rem">&#10003; Recibido</p>
+      <p style="color:rgba(255,255,255,.7);font-size:.92rem">Te contactaremos en menos de 24h con tu estimaci&oacute;n de ROI personalizada</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="ft-inner">
+    <div class="ft-brand">FENIX <em>IA</em></div>
+    <div class="ft-links">
+      <a href="#resultados">Resultados</a>
+      <a href="#productos">Productos</a>
+      <a href="#pricing">Precios</a>
+      <a href="#sectores">Sectores</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+  </div>
+  <div class="ft-legal">
+    <a href="https://www.fenixia.tech/terminos" target="_blank">T&eacute;rminos y Condiciones</a>
+    <a href="https://www.fenixia.tech/privacidad" target="_blank">Pol&iacute;tica de Privacidad</a>
+    <a href="https://www.fenixia.tech/cookies" target="_blank">Pol&iacute;tica de Cookies</a>
+  </div>
+  <div class="ft-copy">&copy; 2026 FENIX IA SOLUTIONS &mdash; fenixia.tech &mdash; Todos los derechos reservados</div>
+</footer>
+
+<script>
+const n=document.getElementById('navbar');
+window.addEventListener('scroll',()=>n.classList.toggle('scrolled',scrollY>50));
+const obs=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('vis');obs.unobserve(x.target)}})},{threshold:.12});
+document.querySelectorAll('.fi').forEach(e=>obs.observe(e));
+document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();const t=document.querySelector(a.getAttribute('href'));if(t)t.scrollIntoView({behavior:'smooth',block:'start'})}));
+
+function toggleMobileMenu(){
+  document.querySelector('.mobile-menu').classList.toggle('active');
+  document.querySelector('.mobile-overlay').classList.toggle('active');
+  document.body.style.overflow=document.querySelector('.mobile-menu').classList.contains('active')?'hidden':'';
+}
+</script>
+</body>
+</html>
