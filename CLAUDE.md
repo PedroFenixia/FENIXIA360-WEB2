@@ -22,9 +22,9 @@ Esta es la **variante WEB2** (tema claro, enfoque ROI y métricas).
 - **Diferenciadores**: Calculadora de ROI, testimonios, métricas de impacto
 
 ## Producto FENIX IA
-- **FENIX Pulse**: Analítica IA (transcripción, sentimiento, oportunidades) - €49/mes
-- **FENIX Connect**: Hub de comunicaciones unificado - €39/mes
-- **FENIX 360**: Bundle completo (Pulse + Connect) - €79/mes
+- **FENIX Pulse**: Analítica IA (transcripción, sentimiento, oportunidades) - €79/mes
+- **FENIX Connect**: Hub de comunicaciones unificado - €49/mes
+- **FENIX 360**: Bundle completo (Pulse + Connect) - €99/mes
 - **Canales**: Llamadas, Email, WhatsApp, Telegram, Meta
 - **Sectores**: Clínicas, Inmobiliarias, E-commerce, Asesorías, Seguros
 
